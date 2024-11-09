@@ -8077,21 +8077,22 @@ button.close {
 }
 
 about-us {
-  background-color: #ffffff; 
-  color: #000000; 
+  background-color: #FFE091; /* Fond jaune clair */
+  color: #000000; /* Texte noir */
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 8px; /* Coins arrondis */
   margin: 20px 0;
   text-align: center;
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif; /* Police simple */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet */
 }
 
-.about-us h2 {
-  font-weight: bold; 
+about-us h2 {
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.about-us p {
+about-us p {
   font-size: 16px;
   line-height: 1.5;
 }
