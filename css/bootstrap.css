@@ -8096,7 +8096,8 @@ button.close {
 
 .about-us p {
   font-size: 20px; 
-  line-height: 1.6; 
+  line-height: 1.6;
+  text-align: center;
   margin: 0 auto; 
   max-width: 800px; 
 }
