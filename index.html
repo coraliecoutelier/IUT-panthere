@@ -1,262 +1,469 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="agence design Paris, stratégie digitale, web design, illustrations">
-    <meta name="description" content="Agence La Panthère, agence web créative basée à Lyon. Nous proposons des services de web design, stratégie digitale, et illustrations pour aider les entreprises à se développer et à attirer de nouveaux clients.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	
-    
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+  <head>
+    <meta charset="utf-8" />
 
-    <title>Agence La Panthère - Création Web & Stratégie Digitale</title>
-</head>
+    <!--meta name="keywords" a été supprimé car plus prise en compte par les moteurs de recherches-->
 
-    
-<!-- Principal conteneur -->
-<div class="page-container">
+    <meta
+      name="description"
+      content="Agence web à Lyon. La Panthère agence accompagne ces clients dans les étapes de création d'un site web 
+	ou dans des projets de refonte de site. 
+	Cette entreprise en webdesign accompagne aussi ces clients dans l'élaboration de la stratégie digitale, 
+	le référencement naturel, la création d'identité graphique...
+	A l'écoute des objectifs du client, la Panthère agence élabore une véritable stratégie digitale permettant d'augmenter 
+	à la fois l'empreinte digitale mais aussi l'expérience utilisateur."
+    />
 
+    <!--Ajout de la balise robots pour permettre à Google d'indexer la page et suivre les liens-->
+    <meta name="robots" content="index, follow" />
 
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
 
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="paris web design logo agence web meilleure agence" height="40" /></a>
-				<div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-						<a href="page2.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
-</div>
-<!-- Principal conteneur END -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
 
-<!-- bloc-1-presentation -->
-<div class="bg-repeat bgc-atomic-tangerine d-bloc" id="bloc-6">
-	<div class="container bloc-lg">
-	<div class="row">
-		<div class="col-sm-12">
-                <img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Logo de l'Agence La Panthère, agence web à Paris, création de logo" />
-               <h3 class="mg-md text-center">
-                    Agence La Panthère
-                </h3>
-                <div class="col-sm-12 text-center">
-				<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"> Nous contacter</a>
-                </div>
+    <!--Les fichiers Javascripts ont été déplacés vers le bas pour faciliter le chargement de la page-->
+
+    <title>
+      Agence web à Lyon | La Panthère Agence | Création, refonte de site &
+      SEO...
+    </title>
+
+    <!-- Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H45R91LBKQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-H45R91LBKQ')
+    </script>
+    <!-- Analytics END -->
+  </head>
+  <body>
+    <!-- Principal conteneur -->
+    <div class="page-container">
+      <!-- bloc-0 -->
+      <header class="bloc bgc-white l-bloc" id="bloc-0">
+        <div class="container bloc-sm">
+          <nav class="navbar row">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="img/agence-la-panthere-monochrome.svg"
+                  alt="logo La Panthère"
+                  width="216"
+                  height="40"
+                />
+              </a>
+
+              <button
+                id="nav-toggle"
+                type="button"
+                class="ui-navbar-toggle navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-1"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
+            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+              <ul class="site-navigation nav navbar-nav">
+                <li class="nav–item">
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li class="nav–item">
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
+      </header>
+      <!-- bloc-0 END -->
+
+      <!-- bloc-1-presentation -->
+      <main>
+        <div
+          class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
+          id="bloc-1-hero"
+        >
+          <div class="container bloc-lg">
+            <div class="row tight-width-whitespace">
+              <div class="col-sm-12">
+                <img
+                  src="img/logo.webp"
+                  class="center-block image-resize-mode"
+                  width="100"
+                  alt="logo de l'agence web de Lyon : La Panthère"
+                />
+                <h1 class="text-center hero-bloc-text tc-white">
+                  Agence La Panthère
+                </h1>
+                <h2 class="text-center tc-white">
+                  ENTREPRISE WEBDESIGN A LYON SPECIALISEE EN STRATEGIE
+                  WEBMARKETING
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bloc-1-presentation END -->
+
+        <!-- bloc-2-services -->
+        <div class="bloc bgc-white l-bloc" id="bloc-2-services">
+          <div class="container bloc-md">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h3>
+                  La Panthère agence intervient sur les différentes étapes de
+                  création d'un site web
+                </h3>
+                <p>
+                  Véritable agence de référencement, nous réalisons la création
+                  de votre identité visuelle et améliorons l'expérience
+                  utilisateur de votre site. Nous élaborons votre stratégie
+                  webmarketing pour optimiser votre présence sur le web.
+                  <br />
+                  Qu'il s'agisse d'une refonte de site web ou d'une conception
+                  intégrale notre agence est là pour vous ! Nous sommes en
+                  mesure de répondre à tous vos besoins et d'élaborer une vraie
+                  stratégie digitale.
+                </p>
+              </div>
+            </div>
+            <div class="row voffset-lg med-width-whitespace">
+              <div class="col-sm-4">
+                <div class="text-center">
+                  <span
+                    class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"
+                  ></span>
+                </div>
+                <h3 class="mg-md text-center">Web design</h3>
+                <p class="text-center">
+                  L'expérience utilisateur est au coeur de nos préoccupations
+                  afin de vous proposer une interface adaptée aux besoins
+                  actuels.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <div class="text-center">
+                  <span
+                    class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"
+                  ></span>
+                </div>
+                <h3 class="mg-md text-center">&nbsp;Stratégie</h3>
+                <p class="text-center">
+                  Nos experts en SEO prendront en compte vos objectifs
+                  commerciaux afin de vous proposer une stratégie webmarketing
+                  adaptée et optimale. Vous pourrez ainsi augmenter votre
+                  empreinte digitale avec un référencement optimisé.
+                  <br />
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <div class="text-center">
+                  <span
+                    class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"
+                  ></span>
+                </div>
+                <h3 class="mg-md text-center">Illustrations</h3>
+                <p class="text-center">
+                  Toujours à l'écoute de vos besoins, nous créons des identités
+                  graphiques innovantes grâce à des contenus graphiques
+                  pertinents. Tout en restant dans l'air du temps votre
+                  interface vous plaira à vous ainsi qu'à vos clients.
+                </p>
+              </div>
+            </div>
+            <div class="row voffset-lg voffset text-center">
+              <h3>Il parle de nous après notre collaboration</h3>
+              <figure class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+                <p>
+                  <q>
+                    "La Panthère agence est une excellente agence web à Lyon !
+                    Les web designers ont réussi à capturer l'essence de notre
+                    entreprise et à l'intégrer à notre site. Cela nous a aidé à
+                    doubler nos ventes en lignes."
+                  </q>
+                </p>
+                <cite> Maxime GUILBARD, PDG de A vos fourchettes </cite>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- bloc-2-services END -->
+
+        <!-- bloc-3-what-i-do -->
+        <div
+          class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax"
+          id="bloc-3-what-i-do"
+        >
+          <div class="container bloc-lg">
+            <div class="row tight-width-whitespace black-background">
+              <div class="col-sm-12">
+                <h3 class="mg-md text-center tc-white">
+                  La Panthère agence vous aide à augmenter votre empreinte
+                  digitale
+                  <br />
+                </h3>
+                <p class="text-center white">
+                  Nous souhaitons aider les entreprises de la région Lyonnaise à
+                  se développer et à connaître le succès. Nous aimons collaborer
+                  avec des entrepreneurs créatifs et des entreprise locales,
+                  qu'elles aient un besoin sur toutes les étapes de la création
+                  de leur site web ou sa refonte. Nous les accompagnons dans la
+                  création d'identité visuelle avec des graphisme web innovants
+                  et adaptés. Grâce à nos consultants SEO spécialisés vous
+                  augmentez votre présence sur le web et attirer de nouveaux
+                  clients.
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bloc-3-what-i-do END -->
+
+        <!-- bloc-4-portfolio -->
+        <div
+          class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc"
+          id="bloc-4-portfolio"
+        >
+          <div class="container bloc-lg">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h3>Les réalisations de La Panthère agence</h3>
+                <p>
+                  Nous avons travaillé avec de nombreux clients pour
+                  l'aboutissement de différents projets : la refonte de site
+                  web, l'amélioration SEO, le graphisme web. L'objectif
+                  principal était d'optimiser l'empreinte digitale de nos
+                  clients.
+                </p>
+              </div>
+            </div>
+            <div class="row tight-width-whitespace portfolio-row">
+              <div class="col-xs-12 col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="img/leJournalLocal.webp"
+                  data-gallery-id="gallery-1"
+                  data-caption="Refonte d'un site web pour un journal local"
+                  data-frame="snapshot-lb"
+                >
+                  <img
+                    src="img/leJournalLocal.webp"
+                    alt="refonte site d'un site web pour un journal local"
+                    class="img-responsive portfolio-thumb"
+                  />
+                </a>
+                <h3 class="mg-md text-center">
+                  Refonte d'un site web pour un journal local
+                </h3>
+                <p class="text-center">
+                  Nous avons entrepris la création d'une identité visuelle pour
+                  un journal Lyonnais et ainsi améliorer sa présence sur le
+                  webet son expérience utilisateur.
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="img/siteWebPhotographie.webp"
+                  data-gallery-id="gallery-1"
+                  data-caption="Création d'un site web pour photographes"
+                  data-frame="snapshot-lb"
+                >
+                  <img
+                    src="img/siteWebPhotographie.webp"
+                    class="img-responsive portfolio-thumb"
+                    alt="Création d'un site web pour photographes"
+                  />
+                </a>
+                <h3 class="mg-md text-center">
+                  Création d'un site web pour photographes
+                </h3>
+                <p class="text-center">
+                  Nous avons conçu la plateforme idéale pour laisser place aux
+                  clichés des photographes.
+                </p>
+              </div>
+            </div>
+            <div class="row tight-width-whitespace portfolio-row">
+              <div class="col-xs-12 col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="img/siteVoyageurs.webp"
+                  data-gallery-id="gallery-1"
+                  data-caption="Création d'un site internet pour un voyageur"
+                  data-frame="snapshot-lb"
+                >
+                  <img
+                    src="img/siteVoyageurs.webp"
+                    class="img-responsive portfolio-thumb"
+                    alt="Création d'un site web pour voyageur"
+                  />
+                </a>
+                <h3 class="mg-md text-center">
+                  Création d'un site internet pour un voyageur
+                </h3>
+                <p class="text-center">
+                  Nous avons élaboré un site internet et les contenus graphiques
+                  afin de sublimer le travail de ce voyageur tout en améliorant
+                  son empreinte digitale.
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <a
+                  href="#"
+                  data-lightbox="img/agenceMariage.webp"
+                  data-gallery-id="gallery-1"
+                  data-caption="Conception d'un site pour une agence de mariage"
+                  data-frame="snapshot-lb"
+                >
+                  <img
+                    src="img/agenceMariage.webp"
+                    class="img-responsive portfolio-thumb"
+                    alt="Création d'un site web pour agence de mariage"
+                  />
+                </a>
+                <h3 class="mg-md text-center">
+                  Conception d'un site pour une agence de mariage
+                </h3>
+                <p class="text-center">
+                  Nous avons travaillé avec cette agence sur toutes les étapes
+                  de création de leur site web permettant la présentation
+                  détaillée de leurs prestations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bloc-4-portfolio END -->
+
+        <!-- bloc-5-cta -->
+        <div
+          class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper"
+          id="bloc-5-cta"
+        >
+          <div class="container bloc-lg">
+            <div class="row">
+              <h2 class="mg-md text-center tc-white">
+                Prêt pour redonner vie à votre projet ?
+                <br />
+              </h2>
+              <p class="mg-md text-center tc-white">
+                Quelque soit votre besoin : refonte de site web, stratégie
+                digitale, création d'identité visuelle... nous sommes là pour
+                vous répondre. Envoyez–nous vos questions en remplissant le
+                formulaire de contact.
+              </p>
+              <div class="col-sm-12 text-center">
+                <a
+                  href="#"
+                  class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"
+                >
+                  Prendre rendez–vous
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- bloc-5-cta END -->
+
+      <!-- Footer - bloc-8 -->
+      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+        <div class="container bloc-sm">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row row-no-gutters social">
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="#" title="twitter">
+                      <span class="fa fa-twitter icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="#" title="facebook">
+                      <span class="fa fa-facebook icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="#" title="dribble">
+                      <span class="fa fa-dribbble icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="#" title="instagram">
+                      <span class="fa fa-instagram icon-md"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-no-gutters">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    <h3 class="white">
+                      Agence digitale Lyon | Agence web à Lyon | SEO & Sites
+                    </h3>
+                    <img
+                      src="img/logo.webp"
+                      class="center-block image-resize-mode"
+                      width="100"
+                      alt="logo de l'agence web de Lyon : La Panthère"
+                    />
+                    <h4 class="white">La Panthère agence</h4>
+                    <p class="white">
+                      Spécialisée en création de site web et stratégie
+                      webmarketing
+                      <br />
+                      contact@lapanthereagence.com
+                      <br />
+                      2 place rue Sathonay 69001 Lyon
+                      <br />
+                      Ouvert de 9h à 18h, du lundi au vendredi
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer - bloc-8 END -->
     </div>
-</div>
-<!-- bloc-1-presentation END -->
+    <!-- Principal conteneur END -->
 
-<!-- bloc-2-services -->
-<div class="bloc bgc-white l-bloc" id="bloc-2-services">
-    <div class="container bloc-lg">
-	<div class="row">
-		<div class="col-sm-12 text-center">
-			<div class="about-us">
-               	<p>
-			L'agence La Panthère est une agence de web design qui aide les entreprises a devenir attractives et visibles sur Internet
-		</p>
-            </div>
- 	</div>
-        <div class="row voffset-lg med-width-whitespace">
-            <div class="col-sm-4">
-                <div class="text-center">
-                    <span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg" aria-hidden="true"></span>
-                </div>
-                <h3 class="mg-md text-center">
-                    Web design
-                </h3>
-                <p class="text-center">
-                    Que vous ayez un site web qui a besoin d’un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <div class="text-center">
-                    <span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg" aria-hidden="true"></span>
-                </div>
-                <h3 class="mg-md text-center">
-                    Stratégie
-                </h3>
-                <p class="text-center">
-                    Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <div class="text-center">
-                    <span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg" aria-hidden="true"></span>
-                </div>
-                <h3 class="mg-md text-center">
-                    Illustrations
-                </h3>
-                <p class="text-center">
-                    Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
-                </p>
-            </div>
-        </div>
-        <div class="row voffset-lg voffset">
-            <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-                <p>"L'agence La Panthère est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon." Maxime Guibard, PDG de À vos fourchettes</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- bloc-2-services END --
-
-<!-- bloc-3-what-i-do -->
-<div class="bg-repeat bgc-atomic-tangerine d-bloc" id="bloc-6">
-	<div class="container bloc-lg">
-	<div class="row">
-		<div class="col-sm-12 text-center">
-			<div class="about-us">
-  				<h2>À propos de nous !</h2>
-  				<p>
-   					Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales a attirer de nouveaux clients .
-    					Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locales, qu'elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d'une identité visuelle complète ou d'une refonte de votre site, n'hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beaux et bien structurés, qui seront facilement trouvables sur les moteurs de recherche.
-  				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-3-what-i-do END -->
-
-<!-- bloc-4-portfolio -->
-<div class="bloc bgc-white bg-repeat l-bloc" id="bloc-4-portfolio">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				  <p>Nous travaillons avec beaucoup de clients, voici nos réalisations</p>
-			</div>
-		</div>
-		<div class="row tight-width-whitespace portfolio-row">
-			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" /></a>
-				<h3 class="mg-md text-center">
-					Refonte d'un site web pour un journal local
-				</h3>
-				<p class="text-center">
-					Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
-				</p>
-			</div>
-			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
-				<h3 class="mg-md text-center">
-					Création d'un site web pour photographes
-				</h3>
-				<p class="text-center">
-					Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
-				</p>
-			</div>
-		</div>
-		<div class="row tight-width-whitespace portfolio-row">
-			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
-				<h3 class="mg-md text-center">
-					Création d'un site internet pour un voyageur
-				</h3>
-				<p class="text-center">
-					Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
-				</p>
-			</div>
-			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
-				<h3 class="mg-md text-center">
-					Conception d'un site pour une agence de mariage
-				</h3>
-				<p class="text-center">
-					Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-4-portfolio END -->
-
-<!-- bloc-5-cta -->
-<div id="bloc-5-cta" style="margin-bottom: 3cm;">
-<div class="bloc bgc-white bg-repeat l-bloc" id="bloc-5-cta">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="text-center">
-  			<h3 class="bold-text">
-    			Prêt pour redonner vie à votre projet ?<br>
-    			Contactez notre équipe !
-  			</h3>
-		</div>
-	<div class="col-sm-12 text-center">	
-	<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero"> Nous contacter</a>
-</div>
-<!-- bloc-5-cta END -->
-
-<!-- Footer - bloc-8 -->
-<div id="Footer - bloc-8" style="margin-top: 2cm;">
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-				<div class="row">
-					<div class="col-sm-4">
-						<h4>Nos clients</h4>
-						<ul>
-							<li><a href="https://agence-nocta.fr/services/agence-marketing-a-nice/">L'agence marketing NOCTA</a></li>
-							<li><a href="https://www.ckc-net.com/agence-webmarketing-nice">L'agence de communication CKC-NET</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4">
-						<h4>Nos outils</h4>
-						<ul>
-							<li><a href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route">Wiz : créateur de site Web</a></li>
-							<li><a href="https://fr.wordpress.org/">Word Press : créateur de site Web</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<p class="text-center">
-					Agence La Panthère - Agence web basée à Lyon.<br>
-				</p>
-				<div class="keywords" style="color:#000000;">
-					Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-8 END -->
-
-
-</div>
-<!-- Principal conteneur END -->
-    
-
-</body>
+    <!-- Scripts - RIEN A MODIFIER -->
+    <script async src="./js/jquery-2.1.0.js"></script>
+    <script async src="./js/bootstrap.js"></script>
+    <script async src="./js/blocs.js"></script>
+    <script async src="./js/jquery.touchSwipe.js"></script>
+    <script async src="./js/gmaps.js"></script>
+  </body>
 </html>
-  
-
-
