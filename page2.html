@@ -1,151 +1,28 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="agence design Paris, stratégie digitale, web design, illustrations, contact, collaborations">
-    <meta name="description" content="Contactez l'agence La Panthère pour discuter de vos projets web. Notre équipe créative est à votre écoute pour vous accompagner dans la création de sites, la stratégie digitale et bien plus. Échangeons pour booster votre présence en ligne !">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>Contact</title>
-
-    
-<!-- Analytics -->
- 
-<!-- Analytics END -->
-    
+    <style type="text/css">
+    html, body, #mapDiv {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
 </head>
 <body>
-<!-- Principal conteneur -->
-<div class="page-container">
-    
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-						<a href="page2.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
+    <div id="mapDiv"></div>
 
-<!-- bloc-6 -->
-<div class="bg-repeat bgc-atomic-tangerine d-bloc" id="bloc-6">
-	<div class="container bloc-lg">
-	<div class="row">
-		<div class="col-sm-12 text-center">
-			<div class="about-us">
-  				<h2>Parlons Web</h2>
-  				<p>
-   					Nous sommes ravis que vous souhaitiez collaborer avec notre Agence !<br>
-					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-   				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-6 END -->
-
-<!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-7 END -->
-
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
-
-<!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<h4>Où nous suivre ?</h4>
-					<ul>
-						<li><a href="https://x.com/?lang=fr" style="font-size: 24px;">Twitter</a></li>
-						<li><a href="https://www.facebook.com/ "style="font-size: 24px;">Facebook</a></li>
-						<li><a href="https://www.instagram.com/" style="font-size: 24px;">Instagram</a></li>
-					</ul>
-				</div>
-				<div class="container bloc-sm">
-					<div class="row">
-						<div class="col-sm-4">
-							<h4>Agence La Panthère - Agence web basée à Lyon</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-8 END -->
-
-</div>
-<!-- Principal conteneur END -->
-    
-
+    <script nonce="xRn_BoAsVToWikwHzdssVQ">
+    function onEmbedLoad() {
+        initEmbed([null, null, null, null, null, [[[2, "spotlit", null, null, null, null, null, [null, null, null, null, null, null, null, null, null, null, 11, null, [null, null, null, null, null, null, null, null, null, null, null, null, null, 1]]]], null, null, [[null, null, null, null, null, null, null, null, null, null, null, null, null, [[["5185028547101826457", "17089055347931406093"], "/g/11sx6y59dh", null, [457695241, 48301673], null, null, null, null, null, null, null, null, null, null, "gcid:website_designer"], 0, 0, null, null, 0, null, 0]]]], null, ["fr", "fr"], [null, null, null, "/maps/api/js/ApplicationService.GetEntityDetails", "/maps/embed/upgrade204", null, "/maps/embed/record204"], null, null, null, null, null, null, null, null, "OA0xZ-W5KsHlxc8PgvHv2Qw", null, null, null, [[[11132.33254529065, 4.8301673, 45.76952410000001], null, null, 13.10000038146973], null, 0, [["0x47f4ebfdfc439d99:0xed28854c1870df0d", "Agence La Panthère, 2 Pl. Sathonay, 69001 Lyon", [45.7695241, 4.830167299999999], "17089055347931406093"], "Agence La Panthère", ["2 Pl. Sathonay", "69001 Lyon"], 5, "3 avis", "https://search.google.com/local/reviews?placeid=ChIJmZ1D_P3r9EcRDd9wGEyFKO0\u0026q=Agence+La+Panth%C3%A8re\u0026hl=fr\u0026gl=FR", null, null, null, null, null, ["https://hadrien-b.github.io/la_panthere/", "hadrien-b.github.io", null, "0ahUKEwjltfm_w9KJAxXBcvEDHYL4O8sQ61gIDigK"], "Concepteur de sites Web", "2 Pl. Sathonay, 69001 Lyon", null, null, null, null, null, null, null, null, null, 1, null, null, null, "ChIJmZ1D_P3r9EcRDd9wGEyFKO0", null, null, "0ahUKEwjltfm_w9KJAxXBcvEDHYL4O8sQ8BcIAigA", null, null, null, null, null, null, 1, ["0ahUKEwjltfm_w9KJAxXBcvEDHYL4O8sQqtMBCAsoCA", ["8FQ6QR9J+R3"], ["QR9J+R3 Lyon"], 3], [[["dimanche", 7, [2024, 11, 10], [["Fermé"]], 0, 2], ["lundi", 1, [2024, 11, 11], [["09:00–18:00", [[9], [18]]]], 0, 1, ["Armistice : ces horaires peuvent varier.", "Armistice", 2]], ["mardi", 2, [2024, 11, 12], [["09:00–18:00", [[9], [18]]]], 0, 1], ["mercredi", 3, [2024, 11, 13], [["09:00–18:00", [[9], [18]]]], 0, 1], ["jeudi", 4, [2024, 11, 14], [["09:00–18:00", [[9], [18]]]], 0, 1], ["vendredi", 5, [2024, 11, 15], [["09:00–18:00", [[9], [18]]]], 0, 1], ["samedi", 6, [2024, 11, 16], [["Fermé"]], 0, 2]], [["dimanche", 7, [2024, 11, 10], [["Fermé"]], 0, 2], null, 6, null, ["Fermé ⋅ Ouvre à 09:00 lun.", [[0, 5, [null, [4292621870, 4294097077]]]]], ["Fermé ⋅ Ouvre à 09:00 lun.", [[0, 5, [null, [4292621870, 4294097077]]]]], null, null, ["Fermé", [[0, 5, [null, [4292621870, 4294097077]]]]]], 7, null, null, null, 1]]], null, null, null, 0, null, null, null, null, null, null, [1]]);
+    }
+    function onApiLoad() {
+        var embed = document.createElement('script');
+        embed.src = "https://maps.gstatic.com/maps-api-v3/embed/js/58/11a/intl/fr_ALL/init_embed.js";
+        document.body.appendChild(embed);
+    }
+    </script>
+    <link rel="preload" href="https://maps.gstatic.com/maps-api-v3/embed/js/58/11a/intl/fr_ALL/init_embed.js" nonce="xRn_BoAsVToWikwHzdssVQ" as="script"/>
+    <script src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&amp;paint_origin=&amp;libraries=geometry,search&amp;v=weekly&amp;loading=async&amp;language=fr&amp;region=fr&amp;callback=onApiLoad" nonce="xRn_BoAsVToWikwHzdssVQ" async defer></script>
 </body>
 </html>
