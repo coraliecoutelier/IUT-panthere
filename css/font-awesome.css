@@ -3042,3 +3042,7 @@
     overflow: visible;
     clip: auto
 }
+
+.fa-twitter.icon-md {
+    color: #000000; 
+}
