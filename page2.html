@@ -2,185 +2,121 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="agence design Paris, stratégie digitale, web design, illustrations">
+    <meta name="description" content="Agence La Panthère - Contactez-nous pour plus d'informations sur nos services.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>La Panthère - Page de Contact</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
-    <!-- Styles et Polices -->
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-PuWkgEBAJYUGxMmSh+TQoDtCr2SgEZtkTYLfR2nYPJozfv9lD/5w6kLtjqFcDyoeLPAF+W8IkU7PoxY5esq3lg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css"> <!-- Assurez-vous d'avoir un fichier style.css -->
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
+    <script src="./js/jquery.touchSwipe.js" defer></script>
+    <script src="./js/gmaps.js"></script>
 
-    <style>
-        /* Styles intégrés au cas où le fichier CSS externe n'est pas disponible */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .page-container {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .logo img {
-            max-width: 100px;
-            vertical-align: middle;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Formulaire de contact */
-        #bloc-7 {
-            background-color: #fff;
-            padding: 50px;
-        }
-
-        h1.hero-bloc-text {
-            color: #fff;
-            font-family: 'Kaushan Script', cursive;
-            font-size: 2.5em;
-        }
-
-        .cta-hero {
-            background-color: #ff6347; /* Couleur Tangerine */
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-
-        .bloc-lg {
-            padding: 50px 20px;
-        }
-
-        .bgc-atomic-tangerine {
-            background-color: #ff6347;
-            color: #fff;
-        }
-
-        .form-group label {
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .social a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        .social a:hover {
-            color: #ff6347;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #ff6347;
-            padding: 20px;
-            color: white;
-            text-align: center;
-        }
-
-        .bloc-button {
-            color: white;
-            text-decoration: none;
-            font-size: 1.5em;
-        }
-    </style>
+    <title>Agence La Panthère - Contact</title>
 </head>
-
 <body>
-    <div class="page-container">
-        <!-- Header -->
-        <header id="bloc-0">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/logo.png" alt="Logo La Panthère">
-                    <span class="typoLogo">La Panthère</span>
-                    <span class="logoBaseline">Agence web basée à Lyon</span>
-                </div>
-                <nav>
-                    <a href="index.html">Accueil</a> |
-                    <a href="contact.html">Contactez-nous</a>
-                </nav>
-            </div>
-        </header>
+<div class="page-container">
 
-        <!-- Section Hero -->
-        <main>
-            <div class="bloc bgc-atomic-tangerine" id="bloc-6">
-                <div class="container bloc-lg">
-                    <h1 class="text-center hero-bloc-text">Parlons web design !</h1>
-                    <p class="text-center white">Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br> Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
+    <!-- Navigation -->
+    <div class="bloc bgc-white l-bloc" id="bloc-0">
+        <div class="container bloc-sm">
+            <nav class="navbar row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="logo" height="40" /></a>
+                    <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+                    <ul class="site-navigation nav navbar-nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="page2.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-contact">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3 class="mg-md">Contactez-nous</h3>
+                    <p>Nous serions ravis de vous aider. Veuillez remplir le formulaire ci-dessous :</p>
                 </div>
             </div>
-
-            <!-- Section Formulaire de Contact -->
-            <div class="bloc bgc-white" id="bloc-7">
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form id="contact-form" action="#" method="post">
-                                <div class="form-group">
-                                    <label for="name">Nom</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Indiquez votre nom" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Adresse email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="Votre adresse email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="source">Comment nous avez-vous connu ?</label>
-                                    <input type="text" id="source" class="form-control" placeholder="Publicité, amis, etc." required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Brief de votre projet</label>
-                                    <textarea id="message" class="form-control" rows="4" placeholder="Décrivez votre projet" required></textarea>
-                                </div>
-                                <button type="submit" class="bloc-button cta-hero">Envoyer</button>
-                            </form>
+            <form id="contactForm" action="envoyer_email.php" method="POST">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" class="form-control" id="nom" name="nom" required>
                         </div>
-                        <div class="col-sm-6">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11132.332545290648!2d4.8301673!3d45.7695241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed28854c1870df0d!2sAgence%20La%20Panth%C3%A8re!5e0!3m2!1sfr!2sfr!4v1673966478286!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer id="bloc-8">
-            <p>La Panthère - 2 place Sathonay, 69001 Lyon</p>
-            <p>Email: <a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a></p>
-            <div class="social">
-                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://dribbble.com" aria-label="Dribble"><i class="fab fa-dribbble"></i></a>
-                <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </footer>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="btn btn-atomic-tangerine btn-clean btn-lg">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <!-- Footer with Social Media Links -->
+    <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-footer">
+        <div class="container bloc-sm">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Nos clients</h4>
+                    <ul>
+                        <li><a href="https://agence-nocta.fr/services/agence-marketing-a-nice/">L'agence marketing NOCTA</a></li>
+                        <li><a href="https://www.ckc-net.com/agence-webmarketing-nice">L'agence de communication CKC-NET</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Suivez-nous</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Nos outils</h4>
+                    <ul>
+                        <li><a href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route">Wix : créateur de site Web</a></li>
+                        <li><a href="https://fr.wordpress.org/">WordPress : créateur de site Web</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>Agence La Panthère - Agence web basée à Lyon.<br>&copy; 2023 Agence La Panthère</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
