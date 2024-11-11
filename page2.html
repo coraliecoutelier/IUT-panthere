@@ -1,11 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Contactez La Panthère - Agence web à Lyon. Nous créons des expériences numériques uniques.">
+    <meta name="keywords" content="Agence web, Lyon, création site internet, web design, développement">
     <title>La Panthère - Contact</title>
-    
+
     <!-- Liens vers les styles -->
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,28 +15,19 @@
     
     <!-- Script de consentement des cookies -->
     <script>
-        // Fonction pour gérer le consentement des cookies
         window.addEventListener("load", function () {
             const cookieConsent = document.getElementById("cookie-consent");
             const consentButton = document.getElementById("accept-cookies");
+            
+            // Cacher le bandeau si le consentement a déjà été donné
+            if (localStorage.getItem("cookie-consent") === "true") {
+                cookieConsent.style.display = "none";
+            }
+
             consentButton.addEventListener("click", function () {
                 cookieConsent.style.display = "none"; // Masquer le bandeau après acceptation
                 localStorage.setItem("cookie-consent", "true"); // Enregistrer le consentement dans le localStorage
             });
-            
-            // Vérifier si le consentement a déjà été donné
-            if (localStorage.getItem("cookie-consent") === "true") {
-                cookieConsent.style.display = "none";
-            }
-        });
-    </script>
-
-    <script>
-        window.addEventListener("load", function () {
-            if (localStorage.getItem("cookie-consent") === "true") {
-                // Charger les scripts d'analytique ou autres cookies tiers ici
-                // Exemple : <script src="https://www.google-analytics.com/analytics.js"></script>
-            }
         });
     </script>
 </head>
@@ -56,7 +49,8 @@
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
                             <div class="logo">
-                                <div class="logopanthere"><img src="img/logo.png" alt="Logo La panthere" />
+                                <div class="logopanthere">
+                                    <img src="img/logo.png" alt="Logo La panthere" />
                                     <span class="typoLogo fontRoboto">La Panthère</span>
                                 </div>
                                 <span class="typoLogo logoBaseline">Agence web basée à Lyon</span>
@@ -64,7 +58,8 @@
                         </a>
                         <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
                             <span class="menu">Menu</span>
-                            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                         </button>
                     </div>
                     <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -155,5 +150,4 @@
                                 </div>
                                 <div class="col-sm-3 text-center">
                                     <a href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
-                                </div>
-                                <div class="col-sm-3 text-center">
+                                </div
