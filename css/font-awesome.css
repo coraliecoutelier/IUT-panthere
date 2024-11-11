@@ -3045,9 +3045,9 @@
 }
 
 .fa-twitter.icon-md {
-    color: #000000; 
+    color: #000000 !important; 
 }
 
 .fa-twitter {
-    color: #000000; 
+    color: #000000 !important; 
 }
