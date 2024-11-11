@@ -1,154 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2 - Titre Secondaire</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* Style général */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <meta charset="utf-8">
+    <meta name="keywords" content="agence design Paris, stratégie digitale, web design, illustrations">
+    <meta name="description" content="Agence La Panthère - Contactez-nous pour plus d'informations sur nos services.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
-        header {
-            background-color: #1f1f1f;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+    <script src="./js/jquery-2.1.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
+    <script src="./js/jquery.touchSwipe.js" defer></script>
+    <script src="./js/gmaps.js"></script>
 
-        header h1 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 2.5rem;
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover,
-        nav ul li a.active {
-            color: #ff6f61;
-        }
-
-        main {
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        .section-title {
-            font-family: 'Roboto', sans-serif;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .info-box {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin-top: 30px;
-            border-left: 5px solid #ff6f61;
-        }
-
-        .info-box h3 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.6rem;
-            color: #333;
-        }
-
-        .info-box ul {
-            padding-left: 20px;
-            list-style-type: disc;
-        }
-
-        .info-box ul li {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .image-section {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .image-section img {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid #ff6f61;
-        }
-
-        .footer {
-            background-color: #1f1f1f;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+    <title>Agence La Panthère - Contact</title>
 </head>
 <body>
-    <header>
-        <h1>Page 2 - Titre Secondaire</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="page1.html">Page 1</a></li>
-                <li><a href="page2.html" class="active">Page 2</a></li>
-                <li><a href="page3.html">Page 3</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="page-container">
 
-    <main>
-        <section>
-            <h2 class="section-title">Sous-titre de la Page 2</h2>
-            <p>Bienvenue sur la page 2 de notre site. Cette page contient un contenu informatif avec des informations clés et des visuels pour accompagner le texte. Nous avons choisi de garder un design épuré pour une meilleure lisibilité et expérience utilisateur.</p>
-
-            <div class="info-box">
-                <h3>Informations Importantes</h3>
-                <ul>
-                    <li>Point d'information important 1</li>
-                    <li>Point d'information important 2</li>
-                    <li>Point d'information important 3</li>
-                </ul>
+    <!-- Navigation -->
+    <div class="bloc bgc-white l-bloc" id="bloc-0">
+        <div class="container bloc-sm">
+            <nav class="navbar row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="logo" height="40" /></a>
+                    <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+                    <ul class="site-navigation nav navbar-nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="page2.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-contact">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3 class="mg-md">Contactez-nous</h3>
+                    <p>Nous serions ravis de vous aider. Veuillez remplir le formulaire ci-dessous :</p>
+                </div>
             </div>
+            <form id="contactForm" action="envoyer_email.php" method="POST">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" class="form-control" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="message">Message :</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="btn btn-atomic-tangerine btn-clean btn-lg">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-            <div class="image-section">
-                <img src="image-page2.jpg" alt="Illustration de la Page 2">
-                <p>Image explicative de la page 2. Vous pouvez ajouter des légendes ici pour décrire le contenu de l'image.</p>
+    <!-- Footer with Social Media Links -->
+    <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-footer">
+        <div class="container bloc-sm">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Nos clients</h4>
+                    <ul>
+                        <li><a href="https://agence-nocta.fr/services/agence-marketing-a-nice/">L'agence marketing NOCTA</a></li>
+                        <li><a href="https://www.ckc-net.com/agence-webmarketing-nice">L'agence de communication CKC-NET</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Suivez-nous</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Nos outils</h4>
+                    <ul>
+                        <li><a href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route">Wix : créateur de site Web</a></li>
+                        <li><a href="https://fr.wordpress.org/">WordPress : créateur de site Web</a></li>
+                    </ul>
+                </div>
             </div>
-        </section>
-    </main>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>Agence La Panthère - Agence web basée à Lyon.<br>&copy; 2023 Agence La Panthère</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Votre Société. Tous droits réservés.</p>
-    </footer>
+</div>
 </body>
 </html>
