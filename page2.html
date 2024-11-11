@@ -9,10 +9,25 @@
     <title>Contact - La Panthère</title>
 
     <!-- Liens vers les styles -->
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-    
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    </noscript>
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </noscript>
+
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+    </noscript>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/bootstrap.min.js" defer></script> <!-- Minifié -->
+    <script src="js/font-awesome.min.js" defer></script> <!-- Minifié -->
+
     <!-- Script de consentement des cookies -->
     <script>
         window.addEventListener("load", function () {
@@ -50,7 +65,7 @@
                         <a class="navbar-brand" href="index.html">
                             <div class="logo">
                                 <div class="logopanthere">
-                                    <img src="img/logo.png" alt="Logo La panthere" />
+                                    <img src="img/logo.png" alt="Logo La panthere" width="200" height="50" /> <!-- Dimensions définies -->
                                     <span class="typoLogo fontRoboto">La Panthère</span>
                                 </div>
                                 <span class="typoLogo logoBaseline">Agence web basée à Lyon</span>
@@ -134,20 +149,4 @@
 
         <!-- bloc-8 : Footer -->
         <footer>
-            <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p class="adresse"><b>La Panthère agence web basée à Lyon</b><br> 2 place Sathonay 69001 Lyon<br>
-                            <a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a>
-                            </p>
-                            <div class="row row-no-gutters social">
-                                <div class="col-sm-3 text-center">
-                                    <a href="https://twitter.com/"><span class="fa fa-twitter icon-md"></span></a>
-                                </div>
-                                <div class="col-sm-3 text-center">
-                                    <a href="https://www.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
-                                </div>
-                                <div class="col-sm-3 text-center">
-                                    <a href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
-                                </div
+            <
