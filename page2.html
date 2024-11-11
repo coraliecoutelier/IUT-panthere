@@ -7,136 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/blocs.min.js"></script>
+    <script src="./js/jqBootstrapValidation.js"></script>
+    <script src="./js/formHandler.js"></script>
     <title>Contact</title>
 
-    
-<!-- Analytics -->
- 
-<!-- Analytics END -->
-    
+    <!-- Analytics -->
+    <!-- Analytics END -->
 </head>
 <body>
 <!-- Principal conteneur -->
 <div class="page-container">
     
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-						<a href="page2.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
+    <!-- Bloc de navigation -->
+    <div class="bloc bgc-white l-bloc" id="bloc-0">
+        <div class="container bloc-sm">
+            <nav class="navbar row" aria-label="Navigation principale">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" aria-label="Retour à la page d'accueil">
+                        <img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthère" height="40" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+                    <ul class="site-navigation nav navbar-nav">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="page2.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
 
-<!-- bloc-6 -->
-<div class="bg-repeat bgc-atomic-tangerine d-bloc" id="bloc-6">
-	<div class="container bloc-lg">
-	<div class="row">
-		<div class="col-sm-12 text-center">
-			<div class="about-us">
-  				<h2>Parlons Web</h2>
-  				<p>
-   					Nous sommes ravis que vous souhaitiez collaborer avec notre Agence !<br>
-					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-   				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-6 END -->
+    <!-- Bloc de présentation -->
+    <div class="bg-repeat bgc-atomic-tangerine d-bloc" id="bloc-6">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="about-us">
+                        <h2>Parlons Web</h2>
+                        <p>Nous sommes ravis que vous souhaitiez collaborer avec notre Agence !<br>
+                        Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- bloc-7 -->
-<div class="bloc" id="bloc-7">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-							<form id="form_1" novalidate>
-								<div class="form-group">
-									<label>Nom</label>
-									<input id="name" class="form-control" placeholder="Indiquez votre nom" required />
-								</div>
-								<div class="form-group">
-									<label>Adresse email</label>
-									<input id="email" class="form-control" type="email" placeholder="Indiquez votre adresse mail" required />
-								</div>
-								<div class="form-group">
-									<label>Comment nous avez-vous connu ?</label>
-									<input class="form-control" placeholder="Publicité, presse, amis, famille ?" required id="input_504" />
-								</div>
-								<div class="form-group">
-									<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-									<textarea id="message" class="form-control" rows="4" placeholder="Saisissez votre message" required></textarea>
-								</div>
-								<button class="btn btn-lg btn-block" type="submit">Envoyer</button>
-							</form>
-						</div>
-						
-						<!-- Carte Google Maps -->
-						<div class="col-sm-6">
-							<iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- bloc-7 END -->
+    <!-- Formulaire de contact -->
+    <div class="bloc" id="bloc-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <form id="form_1" novalidate aria-labelledby="formTitle">
+                        <h3 id="formTitle" class="sr-only">Formulaire de contact</h3>
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input id="name" class="form-control" placeholder="Indiquez votre nom" required aria-required="true"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input id="email" class="form-control" type="email" placeholder="Indiquez votre adresse mail" required aria-required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="input_504">Comment nous avez-vous connu ?</label>
+                            <input id="input_504" class="form-control" placeholder="Publicité, presse, amis, famille ?" required aria-required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Brief de votre projet</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Saisissez votre message" required aria-required="true"></textarea>
+                        </div>
+                        <button class="btn btn-lg btn-block" type="submit">Envoyer</button>
+                    </form>
+                </div>
+                
+                <!-- Carte Google Maps -->
+                <div class="col-sm-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Emplacement de notre agence"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
+    <!-- Bouton de retour en haut de page -->
+    <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" role="button" aria-label="Retour en haut de la page">
+        <span class="fa fa-chevron-up" aria-hidden="true"></span>
+    </a>
 
-
-<!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-4">
-				<h4>Où nous suivre ?</h4>
-					<ul>
-						<li><a href="https://x.com/?lang=fr" style="font-size: 24px;">Twitter</a></li>
-						<li><a href="https://www.facebook.com/ "style="font-size: 24px;">Facebook</a></li>
-						<li><a href="https://www.instagram.com/" style="font-size: 24px;">Instagram</a></li>
-					</ul>
-				</div>
-				<div class="container bloc-sm">
-					<div class="row">
-						<div class="col-sm-4">
-							<h4>Agence La Panthère - Agence web basée à Lyon</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-8 END -->
+    <!-- Footer -->
+    <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+        <div class="container bloc-sm">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Où nous suivre ?</h4>
+                    <ul>
+                        <li><a href="https://x.com/?lang=fr" style="font-size: 24px;" aria-label="Suivez-nous sur Twitter">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/" style="font-size: 24px;" aria-label="Suivez-nous sur Facebook">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" style="font-size: 24px;" aria-label="Suivez-nous sur Instagram">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>Agence La Panthère - Agence web basée à Lyon</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
-<!-- Principal conteneur END -->
-    
-
 </body>
 </html>
