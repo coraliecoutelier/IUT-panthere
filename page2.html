@@ -1,195 +1,89 @@
 <!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>La Panthère - Page de Contact</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<title>Contact | La Panthère agence web à Lyon</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favicon.jpg" type="image/png">
+	</head>
+	
+	<body>
+		<!-- Principal conteneur -->
+		<div class="page-container">
 
-    <!-- Styles et Polices -->
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-PuWkgEBAJYUGxMmSh+TQoDtCr2SgEZtkTYLfR2nYPJozfv9lD/5w6kLtjqFcDyoeLPAF+W8IkU7PoxY5esq3lg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css"> <!-- Assurez-vous d'avoir un fichier style.css -->
+			<!-- Header -->
+			<header class="bgc-white">
+				<div class="container">
+					<nav class="navbar">
+						<a href="index.html" class="navbar-brand">
+							<img src="img/logo.png" alt="Logo La Panthère" />
+							<span>La Panthère</span>
+							<span>Agence web basée à Lyon</span>
+						</a>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="contact.html">Contacter</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
-    <style>
-        /* Styles intégrés au cas où le fichier CSS externe n'est pas disponible */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+			<!-- Bloc de présentation -->
+			<div class="bloc" id="bloc-6">
+				<div class="container">
+					<h1 class="text-center">Parlons web design !</h1>
+					<p class="text-center">Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
+				</div>
+			</div>
 
-        .page-container {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
+			<!-- Formulaire de contact -->
+			<div class="bloc" id="bloc-7">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<form id="form_1" novalidate>
+								<div class="form-group">
+									<label>Nom</label>
+									<input id="name" class="form-control" placeholder="Indiquez votre nom" required />
+								</div>
+								<div class="form-group">
+									<label>Adresse email</label>
+									<input id="email" class="form-control" type="email" placeholder="Indiquez votre adresse mail" required />
+								</div>
+								<div class="form-group">
+									<label>Comment nous avez-vous connu ?</label>
+									<input class="form-control" placeholder="Publicité, presse, amis, famille ?" required id="input_504" />
+								</div>
+								<div class="form-group">
+									<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+									<textarea id="message" class="form-control" rows="4" placeholder="Saisissez votre message" required></textarea>
+								</div>
+								<button class="btn btn-lg btn-block" type="submit">Envoyer</button>
+							</form>
+						</div>
+						
+						<!-- Carte Google Maps -->
+						<div class="col-sm-6">
+							<iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        header {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+			<!-- Footer -->
+			<footer class="bgc-atomic-tangerine">
+				<div class="container">
+					<p><b>La Panthère agence web basée à Lyon</b><br>2 place Sathonay 69001 Lyon<br><a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a></p>
+					<div class="social">
+						<a href="https://twitter.com/" class="fa fa-twitter"></a>
+						<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+						<a href="https://dribbble.com/" class="fa fa-dribbble"></a>
+						<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+					</div>
+				</div>
+			</footer>
 
-        .logo img {
-            max-width: 100px;
-            vertical-align: middle;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Formulaire de contact */
-        #bloc-7 {
-            background-color: #fff;
-            padding: 50px;
-        }
-
-        h1.hero-bloc-text {
-            color: #fff;
-            font-family: 'Kaushan Script', cursive;
-            font-size: 2.5em;
-        }
-
-        .cta-hero {
-            background-color: #ff6347; /* Couleur Tangerine */
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-
-        .bloc-lg {
-            padding: 50px 20px;
-        }
-
-        .bgc-atomic-tangerine {
-            background-color: #ff6347;
-            color: #fff;
-        }
-
-        .form-group label {
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        /* Styles des boutons de réseaux sociaux */
-        .social {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .social a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 1.5em;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .social a:hover {
-            color: #ff6347;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #ff6347;
-            padding: 20px;
-            color: white;
-            text-align: center;
-        }
-
-        .bloc-button {
-            color: white;
-            text-decoration: none;
-            font-size: 1.5em;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="page-container">
-        <!-- Header -->
-        <header id="bloc-0">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/logo.png" alt="Logo La Panthère">
-                    <span class="typoLogo">La Panthère</span>
-                    <span class="logoBaseline">Agence web basée à Lyon</span>
-                </div>
-                <nav>
-                    <a href="index.html">Accueil</a> |
-                    <a href="contact.html">Contactez-nous</a>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Section Hero -->
-        <main>
-            <div class="bloc bgc-atomic-tangerine" id="bloc-6">
-                <div class="container bloc-lg">
-                    <h1 class="text-center hero-bloc-text">Parlons web design !</h1>
-                    <p class="text-center white">Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br> Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
-                </div>
-            </div>
-
-            <!-- Section Formulaire de Contact -->
-            <div class="bloc bgc-white" id="bloc-7">
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form id="contact-form" action="#" method="post">
-                                <div class="form-group">
-                                    <label for="name">Nom</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Indiquez votre nom" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Adresse email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="Votre adresse email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="source">Comment nous avez-vous connu ?</label>
-                                    <input type="text" id="source" class="form-control" placeholder="Publicité, amis, etc." required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Brief de votre projet</label>
-                                    <textarea id="message" class="form-control" rows="4" placeholder="Décrivez votre projet" required></textarea>
-                                </div>
-                                <button type="submit" class="bloc-button cta-hero">Envoyer</button>
-                            </form>
-                        </div>
-                        <div class="col-sm-6">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11132.332545290648!2d4.8301673!3d45.7695241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed28854c1870df0d!2sAgence%20La%20Panth%C3%A8re!5e0!3m2!1sfr!2sfr!4v1673966478286!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer id="bloc-8">
-            <p>La Panthère - 2 place Sathonay, 69001 Lyon</p>
-            <p>Email: <a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a></p>
-            <div class="social">
-                <a href="https://twitter.com" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://dribbble.com" aria-label="Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a>
-                <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </footer>
-    </div>
-</body>
+		</div>
+	</body>
 </html>
