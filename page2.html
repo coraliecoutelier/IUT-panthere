@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Contactez La Panthère - Agence web à Lyon. Nous créons des expériences numériques uniques.">
     <meta name="keywords" content="Agence web, Lyon, création site internet, web design, développement">
-    <title>Contact - La Panthère</title>
+    <meta property="og:title" content="La Panthère - Contact">
+    <meta property="og:description" content="Contactez La Panthère pour la création de votre site web et digitalisation de votre entreprise.">
+    <meta property="og:image" content="img/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@VotreCompteTwitter">
+    <title>La Panthère - Contact</title>
 
     <!-- Liens vers les styles -->
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    </noscript>
-
-    <link rel="stylesheet" type="text/css" href="style.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </noscript>
-
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-    </noscript>
-
-    <!-- Scripts JavaScript -->
-    <script src="js/bootstrap.min.js" defer></script> <!-- Minifié -->
-    <script src="js/font-awesome.min.js" defer></script> <!-- Minifié -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 
     <!-- Script de consentement des cookies -->
     <script>
         window.addEventListener("load", function () {
             const cookieConsent = document.getElementById("cookie-consent");
             const consentButton = document.getElementById("accept-cookies");
-            
-            // Cacher le bandeau si le consentement a déjà été donné
+
             if (localStorage.getItem("cookie-consent") === "true") {
                 cookieConsent.style.display = "none";
             }
 
             consentButton.addEventListener("click", function () {
-                cookieConsent.style.display = "none"; // Masquer le bandeau après acceptation
-                localStorage.setItem("cookie-consent", "true"); // Enregistrer le consentement dans le localStorage
+                cookieConsent.style.display = "none";
+                localStorage.setItem("cookie-consent", "true");
             });
         });
     </script>
+
+    <!-- Préchargement des ressources importantes -->
+    <link rel="preload" href="img/logo.png" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Bandeau de consentement des cookies -->
-    <div id="cookie-consent" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: #fff; padding: 10px; text-align: center;">
-        <p>Nous utilisons des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre politique de confidentialité.</p>
-        <button id="accept-cookies" style="background-color: #f39c12; color: white; border: none; padding: 10px 20px;">Accepter</button>
+    <div id="cookie-consent" role="dialog" aria-live="assertive" aria-labelledby="cookie-consent-message" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: #fff; padding: 10px; text-align: center;">
+        <p id="cookie-consent-message">Nous utilisons des cookies pour améliorer votre expérience. En continuant à naviguer, vous acceptez notre politique de confidentialité.</p>
+        <button id="accept-cookies" style="background-color: #f39c12; color: white; border: none; padding: 10px 20px;" aria-label="Accepter les cookies">Accepter</button>
     </div>
 
     <!-- Principal conteneur -->
     <div class="page-container">
-
         <!-- bloc-0 : Header / Navigation -->
         <header class="bloc bgc-white l-bloc" id="bloc-0">
             <div class="container bloc-sm">
-                <nav class="navbar row">
+                <nav class="navbar row" aria-label="Menu de navigation principal">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.html" aria-label="Retour à l'accueil de La Panthère">
                             <div class="logo">
                                 <div class="logopanthere">
-                                    <img src="img/logo.png" alt="Logo La panthere" width="200" height="50" /> <!-- Dimensions définies -->
+                                    <img src="img/logo.png" alt="Logo La Panthère, agence web basée à Lyon" />
                                     <span class="typoLogo fontRoboto">La Panthère</span>
                                 </div>
                                 <span class="typoLogo logoBaseline">Agence web basée à Lyon</span>
                             </div>
                         </a>
-                        <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                        <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" aria-controls="navbar" aria-expanded="false" aria-label="Menu déroulant">
                             <span class="menu">Menu</span>
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -80,7 +73,7 @@
                     <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
                         <ul role="menu" class="site-navigation nav navbar-nav">
                             <li><a href="index.html">Accueil</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Contacter la Panthère</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -89,14 +82,14 @@
         <!-- bloc-0 END -->
 
         <!-- bloc-6 : Introduction -->
-        <div class="bg-repeat bgc-atomic-tangerine d-bloc" id="bloc-6">
+        <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
             <div class="container bloc-lg">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1 class="text-center hero-bloc-text white">
+                        <h1 class="text-center hero-bloc-text white" id="hero-heading">
                             Parlons web design !
                         </h1>
-                        <p class="text-center mg-lg white tight-width-whitespace">
+                        <p class="text-center mg-lg white tight-width-whitespace" aria-describedby="hero-heading">
                             Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
                             Parlez-nous de votre projet en complétant le formulaire ci-dessous.
                         </p>
@@ -112,31 +105,32 @@
                 <div class="row">
                     <!-- Formulaire -->
                     <div class="col-sm-6">
-                        <form id="form_1" novalidate success-msg="Votre message est parti." fail-msg="Hum notre serveur mail ne réponds plus. Votre message n'est pas parti. Réessayer plus tard.">
+                        <form id="form_1" novalidate success-msg="Votre message est parti." fail-msg="Hum notre serveur mail ne réponds plus. Votre message n'est pas parti. Réessayez plus tard." aria-labelledby="form-heading">
+                            <h2 id="form-heading" class="sr-only">Formulaire de contact</h2>
                             <div class="form-group">
                                 <label for="name">Nom</label>
-                                <input id="name" class="form-control" placeholder="Indiquez votre nom" required />
+                                <input id="name" class="form-control" placeholder="Indiquez votre nom" required aria-required="true" />
                             </div>
                             <div class="form-group">
                                 <label for="email">Adresse email</label>
-                                <input id="email" class="form-control" type="email" placeholder="Indiquez votre adresse mail" required />
+                                <input id="email" class="form-control" type="email" placeholder="Indiquez votre adresse mail" required aria-required="true" />
                             </div>
                             <div class="form-group">
                                 <label for="input_504">Comment nous avez-vous connu ?</label>
-                                <input id="input_504" class="form-control" placeholder="Publicité, presse, amis, famille ?" required />
+                                <input id="input_504" class="form-control" placeholder="Publicité, presse, amis, famille ?" required aria-required="true" />
                             </div>
                             <div class="form-group">
-                                <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-                                <textarea id="message" class="form-control" rows="4" cols="50" placeholder="Saisissez votre message" required></textarea>
+                                <label for="message">Brief de votre projet</label>
+                                <textarea id="message" class="form-control" rows="4" placeholder="Saisissez votre message" required aria-required="true"></textarea>
                             </div>
-                            <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+                            <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="Envoyer le formulaire">
                                 Envoyer
                             </button>
                         </form>
                     </div>
                     <!-- Carte Google -->
                     <div class="col-sm-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11132.332545290648!2d4.8301673!3d45.7695241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed28854c1870df0d!2sAgence%20La%20Panth%C3%A8re!5e0!3m2!1sfr!2sfr!4v1673966478286!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte de l'agence La Panthère" aria-label="Carte de l'agence La Panthère"></iframe>
                     </div>
                 </div>
             </div>
@@ -144,9 +138,9 @@
         <!-- bloc-7 END -->
 
         <!-- ScrollToTop Button -->
-        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')" aria-label="Retourner en haut de la page"><span class="fa fa-chevron-up"></span></a>
         <!-- ScrollToTop Button END -->
 
         <!-- bloc-8 : Footer -->
         <footer>
-            <
+            <div class="bloc bgc-atomic-tanger
